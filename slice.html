@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slice</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style type="text/css">
+		body
+		{
+			background-color: skyblue;
+		}
+		#butt
+		{
+			margin-top: 40px;
+			float: right;
+			width: 50px;
+			height: 40px;
+		}
+		#but
+		{
+			float: left;
+			width: 50px;
+			height: 40px;
+			margin-top: 40px;
+		}
+		a
+		{
+			text-decoration-line: none;
+		}
+		.one
+		{
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			
+		}
+		.one1,.one2
+		{
+			width: 40%;
+			text-align: justify;
+		}
+		.one2
+		{
+			margin-left: 50px;
+		}
+		.a
+		{
+			width: 100%;
+		}
+		/*Mobile mode*/
+		@media only screen and (min-width:320px) and (max-width:767px)
+		{
+			.one
+			{
+				flex-direction: column;
+			}
+			.one1,.one2
+		{
+			width: 100%;
+			text-align: justify;
+		}
+		.one2
+		{
+			margin-left: 0px;
+		}
+
+		}
+		/*Desktop Mode*/
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+{
+.one
+			{
+				flex-direction: column;
+			}
+			.one1,.one2
+		{
+			width: 100%;
+			text-align: justify;
+		}
+		.one2
+		{
+			margin-left: 0px;
+		}
+	
+}
+</style>
+</head>
+<body>
+	<div class="one">
+		<div class="one1">
+			<h2 id="de"></h2>
+			<h3 id="d1"></h3>
+			<h3 id="a"></h3>
+			<h4 id="d2"></h4>
+			<i id="d3"></i>
+			<h2 id="sp"></h2>
+			<h3 id="sp1"></h3>
+			<h4 id="sp2"></h4>
+			<i id="sp3"></i>
+					</div>
+		<div class="one2">
+			<h2 id="re"></h2>
+			<h3 id="r1"></h3>
+			<h4 id="r2"></h4>
+			<i id="r3"></i>
+			<h2 id="sl"></h2>
+			<h3 id="sl1"></h3>
+			<h4 id="sl2"></h4>
+			<i id="sl3"></i>
+
+		</div>
+	</div>
+	<button id="butt"><a href="foreach.html">&#8594;</a></button>
+	<button id="but"><a href="pop.html">&#8592;</a></button>
+	<script type="text/javascript">
+		var d="<u>Delete:</u>";
+		document.getElementById('de').innerHTML=d;
+		var d1="The delete operator removes a given property from an object. On successful deletion, it will return true , else false will be returned. However, it is important to consider the following scenarios: If the property which you are trying to delete does not exist, delete will not have any effect and will return true .";
+		document.getElementById("d1").innerHTML=d1;
+		var a=["tharun","Amaravathi","susmitha","welcome"];
+		document.getElementById("a").innerHTML=a;
+		var d2="Syntax:delete()";
+		document.getElementById("d2").innerHTML=d2;
+		delete a[1];
+		document.getElementById("d3").innerHTML="Ex"+a;
+		var sp="<u>Sort</u>";
+		document.getElementById("sp").innerHTML=sp;
+		var sp1="The sort() method sorts the items of an array. The sort order can be either alphabetic or numeric, and either ascending (up) or descending (down). By default, the sort() method sorts the values as strings in alphabetical and ascending order.";
+		document.getElementById("sp1").innerHTML=sp1;
+		var sp2="Syntax:value.sort()";
+		document.getElementById("sp2").innerHTML=sp2;
+		a.sort();
+		document.getElementById("sp3").innerHTML=a;
+       var r="<u>Reverse:</u>";
+       document.getElementById("re").innerHTML=r;
+       var r1="The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first.";
+       document.getElementById("r1").innerHTML=r1;
+       var r2="Syntax:value.reverse()";
+       document.getElementById("r2").innerHTML=r2;
+       a.reverse();
+       document.getElementById("r3").innerHTML="Ex:"+a;
+
+       var sl="<u>Slice:</u>";
+       document.getElementById("sl").innerHTML=sl;
+       var sl1="The slice() method returns the selected elements in an array, as a new array object. The slice() method selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.";
+       document.getElementById("sl1").innerHTML=sl1;
+       var sl2="Syntax:value.slice(starting index,ending index)";
+   document.getElementById("sl2").innerHTML=sl2;
+    var sl3=["susmitha","tharun","amaravathi","veeranagaiah"];
+   var n=sl3.slice(0,2);
+   document.getElementById("sl3").innerHTML="Ex:"+n;
+          	</script>
+
+</body>
+</html>

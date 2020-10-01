@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>foreach</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style type="text/css">
+		body
+		{
+			background-color: skyblue;
+		}
+		.a1
+		{
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			text-align: justify;
+			
+		}
+		.a2
+		{
+			width: 40%;
+			text-align: justify;
+		}
+		.a3
+		{
+			width: 40%;
+			margin-left: 50px;
+		}
+		#butt
+		{
+			margin-top: 40px;
+			float: right;
+			width: 50px;
+			height: 40px;
+		}
+		#but
+		{
+			float: left;
+			width: 50px;
+			height: 40px;
+			margin-top: 40px;
+		}
+		a
+		{
+			text-decoration-line: none;
+		}
+		/*Mobile mode*/
+		@media only screen and (min-width:320px) and (max-width:767px)
+		{
+			.a1
+		{
+			
+			flex-direction: column;
+			
+			
+		}
+		.a2
+		{
+			width: 100%;
+			text-align: justify;
+		}
+		.a3
+		{
+			width: 100%;
+			margin-left: 0px;
+		}
+		#butt,#but
+		{
+			margin-bottom: 50px;
+		}
+		}
+		/*Desktop Mode*/
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+{
+		.a1
+		{
+			
+			flex-direction: column;
+		}
+		.a2
+		{
+			width: 100%;
+			text-align: justify;
+		}
+		.a3
+		{
+			width: 100%;
+			margin-left: 0px;
+		}
+		#butt,#but
+		{
+			margin-bottom: 50px;
+		}
+
+	
+}
+</style>
+</head>
+<body>
+	<div class="a1">
+		<div class="a2">
+			<h2 id="for"></h2>
+			<h3 id="f1"></h3>
+			<h4 id="f2"></h4>
+			<h3 id="f3"></h3>
+			<i id="f5"></i>
+			<i id="f4"></i>
+			<h2 id="f6"></h2>
+			<h3 id="f7"></h3>
+			<h4 id="f8"></h4>
+			<h3 id="f9"></h3>
+			<i id="f11"></i>
+			
+			
+		</div>
+		<div class="a3">
+			<h2 id="m1"></h2>
+			<h3 id="m2"></h3>
+			<i id="m"></i>
+			
+		</div>
+	</div>
+	<button id="butt"><a href="succes.html">&#8594;</a></button>
+	<button id="but"><a href="slice.html">&#8592;</a></button>
+	<script type="text/javascript">
+		var f="<u>ForEach():</u>";
+		document.getElementById('for').innerHTML=f;
+		var f1="The forEach() method calls a function once for each element in an array, in order. Note: the function is not executed for array elements without values.";
+		document.getElementById('f1').innerHTML=f1;
+		var f2="Syntax:foreach(function_name)";
+		document.getElementById('f2').innerHTML=f2;
+		
+		var a=["welcome","mits","webclub"];
+		var b="";
+		a.forEach(iter);
+		document.getElementById("f3").innerHTML=a;
+		document.getElementById("f4").innerHTML=b;
+		function iter(x)
+		{
+			b+="hi  "+x+"<br>";
+
+		}
+        var f5="Ex:";
+        document.getElementById("f5").innerHTML=f5;
+        var f6="<u>Filter():</u>";
+        document.getElementById("f6").innerHTML=f6;
+        var f7="The filter() method creates an array filled with all array elements that pass a test (provided as a function). Note: filter() does not execute the function for array elements without values. Note: filter() does not change the original array.";
+        document.getElementById("f7").innerHTML=f7;
+        var f8="Syntax:value.filter()";
+        document.getElementById("f8").innerHTML=f8;
+        var c=[1,2,10,5,20];
+        document.getElementById("f9").innerHTML="Array:"+c;
+		var d=c.filter(hello);
+		document.getElementById("f11").innerHTML="Ex:"+d;
+		function hello(value,index,array){
+			return value<10;
+
+		}
+		var a="<u>MAP()</u>";
+		var b="The <u>map()</u> method creates a new array with the results of calling a function for every array element.";
+		var c="=>This method calls provided function once for each element in order.";
+		var d="=>This method doesnot change original array.";
+		var array="The original array is-25,110,140,100<br>The output is-";
+		var e=[25,110,140,100];
+		var f=e.map(item);
+		document.getElementById('m').innerHTML="Ex:"+f;
+		function item(hi)
+		{
+			return hi*20;
+		}
+		document.getElementById('m1').innerHTML=a+"<br>"+"<br>"+b+"<br>"+c+"<br>"+c;
+		document.getElementById('m2').innerHTML=array;
+		
+	</script>
+
+</body>
+</html>

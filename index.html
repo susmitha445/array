@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>29-9</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style type="text/css">
+		body
+	{
+		background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTAXE5N3fM8Nt-u6oVHsEmPZhGZLGnWo7jNoQ&usqp=CAU);
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+		}
+		#a1
+		{
+			margin-top: 280px;
+			line-height: 40px;
+			color:white;
+
+		}
+		#butt
+		{
+			margin-top: 90px;
+			float: right;
+			width: 50px;
+			height: 40px;
+		}
+		#but
+		{
+			float: left;
+			width: 50px;
+			height: 40px;
+			margin-top: 90px;
+		}
+		a
+		{
+			text-decoration-line: none;
+		}
+		/*mobile mode*/
+@media only screen and (min-width:320px) and (max-width:767px)
+{
+	body
+	{
+		width: 90%;
+		
+
+	}
+	#butt,#but
+		{
+			margin-bottom: 50px;
+		}
+}
+/*Desktop Mode*/
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+{
+	body
+	{
+		width: 90%;
+
+	}
+	#butt,#but
+		{
+			margin-bottom: 50px;
+		}
+
+}
+
+	</style>
+</head>
+<body>
+	<center><h1 id="a1">
+	</h1></center>
+	<button id="butt"><a href="cool.html">&#8594;</a></button>
+	<button id="but"><a href="index.html">&#8592;</a></button>
+	<script type="text/javascript">
+		var a1="Hii Welcome to all....<br>Today we are learning about <q>Array's in Javascript!!!!</q>";
+		document.getElementById('a1').innerHTML=a1;
+	</script>
+	
+</body>
+</html>

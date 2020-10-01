@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>start</title>
+</head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style type="text/css">
+	body
+	{
+		background-color: skyblue;
+	}
+	#s
+	{
+		margin-top: 290px;
+
+	}
+	#butt
+		{
+			margin-top: 40px;
+			float: right;
+			width: 50px;
+			height: 40px;
+		}
+		#but
+		{
+			float: left;
+			width: 50px;
+			height: 40px;
+			margin-top: 40px;
+		}
+		a
+		{
+			text-decoration-line: none;
+		}
+		/*Mobile mode*/
+		@media only screen and (min-width:320px) and (max-width:767px)
+{
+	body
+	{
+		width: 90%;
+	}
+	
+	#butt,#but
+		{
+			margin-bottom: 50px;
+		}
+}
+/*Desktop Mode*/
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+{
+	body
+	{
+		width: 90%;
+	}
+	
+	#butt,#but
+		{
+			margin-bottom: 50px;
+		}
+
+}
+</style>
+<body>
+	<center><h1 id="s"></h1></center>
+	<button id="butt"><a href="length.html">&#8594;</a></button>
+	<button id="but"><a href="agenda.html">&#8592;</a></button>
+<script type="text/javascript">
+	var s="Let's Start!!!";
+	 document.getElementById('s').innerHTML=s;
+</script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pop</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style type="text/css">
+		body
+		{
+			background-color: skyblue;
+
+		}
+		#butt
+		{
+			margin-top: 40px;
+			float: right;
+			width: 40px;
+			
+			height: 40px;
+		}
+		#but
+		{
+			float: left;
+			width: 50px;
+			height: 40px;
+			margin-bottom:-90px;
+		}
+		a
+		{
+			text-decoration-line: none;
+		}
+		.pp
+		{
+			display: flex;
+			flex-direction: row;
+			text-align: justify;
+			width: 100%;
+		}
+		.p1,.sh
+		{
+			width: 40%;
+			text-align: justify;
+	
+		}
+		.sh
+		{
+			margin-left: 90px;
+		}
+		/*Mobile mode*/
+		@media only screen and (min-width:320px) and (max-width:767px)
+		{
+			.pp
+			{
+				flex-direction: column;
+				width: 90%;
+			}
+			.p1,.sh
+		{
+			width: 100%;
+			text-align: justify;
+	}
+	.sh
+	{
+		margin-left: 0px;
+	}
+			#butt
+		{
+			margin-bottom: 50px;
+		}
+		#but
+		{
+			margin-top:50px;
+		}
+	#p5
+	{
+		width: 90%;
+		}
+
+	}
+	/*Desktop Mode*/
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+{
+	.pp
+			{
+				flex-direction: column;
+				width: 90%;
+			}
+			.p1,.sh
+		{
+			width: 100%;
+			text-align: justify;
+	}
+	.sh
+	{
+		margin-left: 0px;
+	}
+	#butt
+		{
+			margin-bottom: 50px;
+		}
+		}
+		#but
+		{
+			margin-top:50px;
+		}
+
+}
+		
+	</style>
+</head>
+<body>
+	<div class="pp">
+		<div class="p1">
+	<h2 id="p1"></h2>
+	<h3 id="p2"></h3>
+	<h4 id="p3"></h4>
+	<h3 id="p5"></h3>
+	<i id="p4"></i>
+	<h3 id="p6"></h3>
+	<h2 id="p7"></h2>
+	<h3 id="p8"></h3>
+	<h4 id="p9"></h4>
+	<i id="p10"></i>
+	<h2 id="s1"></h2>
+	</div>
+	
+	<div class="sh">
+		<h3 id="s2"></h3>
+		<h4 id="s3"></h4>
+		<i id="ex"></i>
+		<h2 id="un"></h2>
+		<h3 id="u1"></h3>
+		<h4 id="u4"></h4>
+		<i id="u5"></i>
+	</div>
+</div>
+
+<button id="butt"><a href="slice.html">&#8594;</a></button>
+	<button id="but"><a href="length.html">&#8592;</a></button>
+<script type="text/javascript">
+	var p="<u>POP:</u>";
+	document.getElementById("p1").innerHTML=p;
+	var p1="The pop method removes the last element from an array and returns that value to the caller. pop is intentionally generic; this method can be called or applied to objects resembling arrays.";
+	document.getElementById("p2").innerHTML=p1;
+	 var a=["Veeranagaiah","tharun","Amaravathi","susmitha"];
+document.getElementById("p5").innerHTML="Print array<br>:"+a;
+	var p2="Syntax:value.pop()";
+	document.getElementById("p3").innerHTML=p2;
+	document.getElementById("p4").innerHTML="Ex:"+a.pop();
+	document.getElementById("p6").innerHTML="printing array<br>:"+a;
+	var p7="<u>Push:</u>";
+	document.getElementById("p7").innerHTML=p7;
+   var p8="The push() method adds new items to the end of an array, and returns the new length. Note: The new item(s) will be added at the end of the array. Note: This method changes the length of the array. Tip: To add items at the beginning of an array, use the unshift() method.";
+   document.getElementById("p8").innerHTML=p8;
+     var p9="Syntax:a.push(value)";
+document.getElementById("p9").innerHTML=p9;
+a.push("madhu");
+document.getElementById("p10").innerHTML="Ex:"+a;
+var s1="<u>Shift:</u>";
+document.getElementById("s1").innerHTML=s1;
+var s2="The shift method removes the element at the zeroeth index and shifts the values at consecutive indexes down, then returns the removed value. If the length property is 0, undefined is returned. shift is intentionally generic; this method can be called or applied to objects resembling arrays.";
+document.getElementById("s2").innerHTML=s2;
+var s3="Syntax:value.shift()";
+document.getElementById("s3").innerHTML=s3;
+a.shift();
+document.getElementById("ex").innerHTML="Ex:"+a;
+var u="<u>Unshift:</u>";
+document.getElementById("un").innerHTML=u;
+var u1="The unshift method inserts the given values to the beginning of an array-like object. unshift is intentionally generic. ... Please note that, if multiple elements are passed as parameters, they're inserted in chunk at the beginning of the object, in the exact same order they were passed as parameters.";
+document.getElementById("u1").innerHTML=u1;
+var u4="Syntax:value.unshift(something)";
+document.getElementById("u4").innerHTML=u4;
+a.unshift("ravi");
+document.getElementById("u5").innerHTML="Ex:"+a;
+
+</script>
+
+</body>
+</html>
